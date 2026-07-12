@@ -1,41 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Lucas Vaz Ribeiro</title>
+    <title>Hotel Aurora — Onde cada amanhecer é uma nova experiência</title>
+
 </head>
-
 <body>
-    <header>
-        <h1>Lucas Vaz Ribeiro</h1>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <div class="container header__content">
+            <a href="#hero" class="logo">Hotel Aurora</a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav class="nav" aria-label="Menu principal">
+                <ul class="nav__list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#quartos">Quartos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <!--Apresentacao-->
-        <section></section>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <!--<div class="hero__glow" aria-hidden="true"></div>-->
+        <div class="container hero__content">
+            <h1 class="hero__titulo">Hotel Aurora</h1>
+        <p class="hero__slogan">Onde cada amanhecer é uma nova experiência.</p>
+        <a href="#contato" class="btn btn--primary">Reserve Agora</a>
+        </div>
+    </section>
 
-        <!--sobre-->
-        <section></section>
+    <!-- ===================== SOBRE ===================== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2 class="titulo-secao">Quem Somos</h2>
+            <p class="sobre__texto">
+                Localizado à beira-mar, o Hotel Aurora nasceu do desejo de transformar
+                cada estadia em uma lembrança única. Unimos conforto, design autoral
+                e um atendimento próximo para que você viva a cidade com a
+                tranquilidade de estar em casa.
+            </p>
 
-        <!--projeto-->
-        <section></section>
-        
-        <!--contato-->
-        <section></section>
+        <h3 class="sobre__subtitulo">Nossos Diferenciais</h3>
+        <ul class="diferenciais">
+            <li class="diferenciais__item">
+            <span class="diferenciais__icone" aria-hidden="true">☀</span>
+            Vista privilegiada para o nascer do sol
+            </li>
+            <li class="diferenciais__item">
+            <span class="diferenciais__icone" aria-hidden="true">☕</span>
+            Café da manhã artesanal incluso
+            </li>
+            <li class="diferenciais__item">
+            <span class="diferenciais__icone" aria-hidden="true">🛎</span>
+            Atendimento personalizado 24 horas
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- ===================== QUARTOS ===================== -->
+    <section class="quartos" id="quartos">
+        <div class="container">
+            <h2 class="titulo-secao">Nossos Quartos</h2>
+
+            <div class="quartos__grid">
+            <article class="quarto-card">
+                <h3 class="quarto-card__titulo">Quarto Standard</h3>
+                <p class="quarto-card__texto">
+                    Aconchegante e funcional, ideal para estadias curtas com todo
+                    o conforto essencial.
+                </p>
+            </article>
+
+            <article class="quarto-card">
+                <h3 class="quarto-card__titulo">Quarto Luxo</h3>
+                <p class="quarto-card__texto">
+                    Mais espaço, varanda privativa e uma decoração pensada para
+                    momentos de descanso prolongado.
+                </p>
+            </article>
+
+            <article class="quarto-card">
+                <h3 class="quarto-card__titulo">Suíte</h3>
+                <p class="quarto-card__texto">
+                    Nossa categoria mais exclusiva, com banheira de hidromassagem
+                    e vista panorâmica para o amanhecer.
+                </p>
+            </article>
+            </div>
+        </div>
+    </section>
+
+
     </main>
 
-    <footer></footer>
 </body>
 </html>
