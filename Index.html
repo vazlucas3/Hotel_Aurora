@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Aurora — Onde cada amanhecer é uma nova experiência</title>
+    <title>Hotel Aurora</title>
 
 </head>
 <body>
@@ -95,8 +95,78 @@
         </div>
     </section>
 
+    <!-- ===================== CONTATO ===================== -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="titulo-secao">Entre em Contato</h2>
+            <p class="contato__texto">
+                Preencha o formulário abaixo para tirar dúvidas ou solicitar sua
+                reserva. Informe o CEP e preenchemos o endereço para você.
+            </p>
 
+            <!-- novalidate: a validação é feita manualmente pelo script.js -->
+            <form id="formContato" class="form" novalidate>
+
+            <div class="form__group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="form__group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" required>
+            </div>
+
+            <div class="form__group">
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" name="rua" placeholder="Preenchido automaticamente" required>
+            </div>
+
+            <div class="form__row">
+                <div class="form__group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Preenchido automaticamente" required>
+                </div>
+
+                <div class="form__group form__group--pequeno">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" placeholder="UF" maxlength="2" required>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre sua reserva" required></textarea>
+            </div>
+
+            <!-- Mensagens de erro/sucesso são inseridas aqui pelo script.js -->
+            <p class="form__feedback" id="formFeedback" role="alert" aria-live="polite"></p>
+
+            <button type="submit" class="btn btn--primary">Enviar</button>
+            </form>
+        </div>
+    </section>
     </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer__content">
+        <div class="footer__info">
+            <p>📞 (51) 96558-6547 </p>
+            <p>✉ contato@hotelaurora.com</p>
+        </div>
+        </div>
+
+        <p class="footer__copy">&copy; 2026 Hotel Aurora. Todos os direitos reservados.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
 
 </body>
 </html>
